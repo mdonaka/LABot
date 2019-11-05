@@ -5,7 +5,7 @@ import requests
 
 def lambda_handler(event, context):
     URL = os.environ["WebhookURL"]
-    # URL = decode.decode(URL)
+    # URL = decode(URL)
     requests.post(URL, data=json.dumps({
         'text': u'Hello World From AWS.'
     }))
