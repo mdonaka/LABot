@@ -1,3 +1,4 @@
 .env
 *.zip
 .python-version
+*.json
